@@ -204,7 +204,7 @@ class Opicoes(QWidget):
 		self.Layout.addWidget(QLabel('Genero: ', self), 1, 2)
 		self.Layout.addWidget(self.Genero, 1, 3)
 		self.Dica = QLineEdit(self)
-		self.Dica.returnPressed(self.AddPalavra)
+		self.Dica.returnPressed.connect(self.AddPalavra)
 		self.Layout.addWidget(QLabel('Dica: ', self), 1,4)
 		self.Layout.addWidget(self.Dica, 1, 5)
 		self.Add = QPushButton('Adicionar palavra', self)
