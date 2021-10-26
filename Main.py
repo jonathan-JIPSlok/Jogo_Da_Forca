@@ -22,7 +22,7 @@ class Game(QWidget):
 		self.Opicoes.clicked.connect(self.OptionGame)
 		self.Layout.addWidget(self.Opicoes,1, 0, 1, 1)
 
-		#Logo do Criador fodao
+		#Logo do Criador
 		self.Logo = QLabel(self)
 		self.Logo.setPixmap(QPixmap('Logo.png'))
 		self.Layout.addWidget(self.Logo, 1, 1)
